@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph" app:startDestination="@id/numberListFragment">
+    <fragment android:id="@+id/numberListFragment"
+        android:name="com.arthur.android.numberslight.listnumbers.NumbersListFragment"
+        android:label="NumberListFragment.xml">
+        <action android:id="@+id/fragment_list_to_detail"
+            app:destination="@id/numberDetailsFragment"/>
+    </fragment>
+    <fragment android:id="@+id/numberDetailsFragment"
+        android:name="com.arthur.android.numberslight.details.NumberDetailFragment"
+        android:label="NumberDetailsFragment"/>
+</navigation>
